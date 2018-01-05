@@ -32,6 +32,7 @@ function Parse(dateString, layer) {
  * @constructor
  */
 function Time(d) {
+  if (!d) return Now();
   this.date = new Date(d);
   Object.defineProperty(this, 'date', {
     enumerable: false,
