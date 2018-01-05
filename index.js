@@ -32,6 +32,7 @@ function Parse(dateString, layer) {
  * @constructor
  */
 function Time(d) {
+  if (!d) return Now();
   this.date = new Date(d);
   Object.defineProperty(this, 'date', {
     enumerable: false,
@@ -66,11 +67,11 @@ Time.RFC822 = 'ddd MMM D HH:mm:ss ZZ YYYY z';
 Time.RFC822Z = 'D MMM YY HH:mm ZZ';
 Time.RFC850 = 'dddd, DD-MMM-YY HH:mm:ss z';
 Time.RFC1123 = 'ddd, DD MMM YY HH:mm:ss z';
-Time.RFC3339 = 'YYYY-MM-DDTHH:mm:SSZ';
-Time.RFC3339Nano = 'YYYY-MM-DDTHH:mm.SSSSSS:SSZ';
+Time.RFC3339 = 'YYYY-MM-DDTHH:mm:ssZ';
+Time.RFC3339Nano = 'YYYY-MM-DDTHH:mm:ss.SSSSSSZ';
 Time.Kitchen = 'h:mA';
 Time.Stamp = 'MMM  D HH:mm:ss';
-Time.StampMilli = 'MMM  D HH:mm:ss';
+Time.StampMilli = 'MMM  D HH:mm:ss.SSS';
 Time.StampMicro = 'MMM  D HH:mm:ss.SSSSSS';
 Time.StampNano = 'MMM  D HH:mm:ss.SSSSSSSSS';
 Time.ISO8601 = 'YYYY-MM-DDTHH:mm:ss ZZ';
@@ -83,7 +84,7 @@ Time.ISOWeekDay = 'YYYY-\\Www-d';
 Time.SlashedDate = 'MM/DD/YYYY';
 Time.StrfTimeClock = 'HH:mm';
 Time.StrfTimeISODate = 'YYYY-MM-DD';
-Time.StrfTimeKitchen = 'H:MM:SS A';
+Time.StrfTimeKitchen = 'H:mm:ss A';
 Time.StrfTimeShortdate = 'D-MMM-YYYY';
 Time.UTC = 'ddd, DD MMM YYYY HH:mm:ss z';
 
