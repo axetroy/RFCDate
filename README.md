@@ -1,7 +1,14 @@
 ## RFC Date
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/RFCDate.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/axetroy/RFCDate.svg?branch=master)](https://travis-ci.org/axetroy/RFCDate)
+[![Coverage Status](https://coveralls.io/repos/github/axetroy/RFCDate/badge.svg?branch=master)](https://coveralls.io/github/axetroy/RFCDate?branch=master)
+[![Dependency](https://david-dm.org/axetroy/rfcdate.svg)](https://david-dm.org/axetroy/rfcdate)
 ![License](https://img.shields.io/badge/license-Apache-green.svg)
+[![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-green.svg)](https://github.com/prettier/prettier)
+![Node](https://img.shields.io/badge/node-%3E=6.0-blue.svg?style=flat-square)
+[![npm version](https://badge.fury.io/js/rfcdate.svg)](https://badge.fury.io/js/rfcdate)
+![Size](https://github-size-badge.herokuapp.com/axetroy/RFCDate.svg)
 
 Format/Parse common standard date format.
 
