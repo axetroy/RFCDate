@@ -1,6 +1,6 @@
 {
   "name": "rfcdate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Standard date formator and parser.",
   "main": "index.js",
   "scripts": {
