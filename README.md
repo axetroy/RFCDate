@@ -27,7 +27,7 @@ now.format(Time.RFC822Z);           // 5 Jan 18 14:22 +0800
 now.format(Time.RFC850);            // Friday, 05-Jan-18 14:22:22 UTC
 now.format(Time.RFC1123);           // Fri, 05 Jan 18 14:22:22 UTC
 now.format(Time.RFC3339);           // 2018-01-05T14:22:39+08:00
-now.format(Time.RFC3339Nano);       // 2018-01-05T14:22.392000:39+08:00
+now.format(Time.RFC3339Nano);       // 2018-01-05T14:22:39.392000+08:00
 now.format(Time.Kitchen);           // 2:22PM
 now.format(Time.Stamp);             // Jan  5 14:22:22
 now.format(Time.StampMilli);        // Jan  5 14:22:22.392
@@ -43,7 +43,7 @@ now.format(Time.ISOWeekDay);        // 2018-W01-5
 now.format(Time.SlashedDate);       // 01/05/2018
 now.format(Time.StrfTimeClock);     // 14:22
 now.format(Time.StrfTimeISODate);   // 2018-01-05
-now.format(Time.StrfTimeKitchen);   // 14:01:39 PM
+now.format(Time.StrfTimeKitchen);   // 14:22:39 PM
 now.format(Time.StrfTimeShortdate); // 5-Jan-2018
 now.format(Time.UTC);               // Fri, 05 Jan 2018 14:22:22 UTC
 
