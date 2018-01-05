@@ -1,7 +1,7 @@
 {
   "name": "rfcdate",
   "version": "0.0.1",
-  "description": "Format/Parse common standard date format.",
+  "description": "Format/Parse common standard date.",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava"
