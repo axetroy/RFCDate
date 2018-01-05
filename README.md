@@ -10,7 +10,7 @@
 [![npm version](https://badge.fury.io/js/rfcdate.svg)](https://badge.fury.io/js/rfcdate)
 ![Size](https://github-size-badge.herokuapp.com/axetroy/RFCDate.svg)
 
-Format/Parse common standard date format.
+Standard date formattor and parser.
 
 ## Usage
 
