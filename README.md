@@ -16,8 +16,39 @@ Format/Parse common standard date format.
 
 ```javascript
 const { Now, Parse, Time } = require('rfcdate');
-console.log(time.Now().format(Time.RFC3339));
-console.log(new Time().format(Time.RFC3339Nano));
+
+// format
+const now = new Time(new Date());
+now.format(Time.ANSIC);             // Fri Jan 5  14:22:22 2018
+now.format(Time.UnixDate);          // Fri Jan  5 14:22:22 UTC 2018
+now.format(Time.RubyDate);          // Fri Jan 5 14:22:22 +0800 2018
+now.format(Time.RFC822);            // Fri Jan 5 14:22:22 +0800 2018 UTC
+now.format(Time.RFC822Z);           // 5 Jan 18 14:22 +0800
+now.format(Time.RFC850);            // Friday, 05-Jan-18 14:22:22 UTC
+now.format(Time.RFC1123);           // Fri, 05 Jan 18 14:22:22 UTC
+now.format(Time.RFC3339);           // 2018-01-05T14:22:39+08:00
+now.format(Time.RFC3339Nano);       // 2018-01-05T14:22.392000:39+08:00
+now.format(Time.Kitchen);           // 2:22PM
+now.format(Time.Stamp);             // Jan  5 14:22:22
+now.format(Time.StampMilli);        // Jan  5 14:22:22.392
+now.format(Time.StampMicro);        // Jan  5 14:22:22.392000
+now.format(Time.StampNano);         // Jan  5 14:22:22.392000000
+now.format(Time.ISO8601);           // 2018-01-05T14:22:22 +0800
+now.format(Time.ISO8601Z);          // 2018-01-05T06:22:22Z
+now.format(Time.ISODate);           // 2018-01-05
+now.format(Time.ISOOrigin);         // 2018-5
+now.format(Time.ISOTime);           // 14:22:22
+now.format(Time.ISOWeek);           // 2018-W01
+now.format(Time.ISOWeekDay);        // 2018-W01-5
+now.format(Time.SlashedDate);       // 01/05/2018
+now.format(Time.StrfTimeClock);     // 14:22
+now.format(Time.StrfTimeISODate);   // 2018-01-05
+now.format(Time.StrfTimeKitchen);   // 14:01:39 PM
+now.format(Time.StrfTimeShortdate); // 5-Jan-2018
+now.format(Time.UTC);               // Fri, 05 Jan 2018 14:22:22 UTC
+
+// parse
+Parse("2018-01-05T14:22.392000:39+08:00", Time.RFC3339Nano)
 ```
 
 ## Contributing
